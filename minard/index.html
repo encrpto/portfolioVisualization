@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minard’s March to Moscow — A Visual Data Story</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+ 
+   <center><div>
+    <h1>Charles Joseph Minard’s “March to Moscow” Reimagined</h1>
+    <p class="subtitle">
+      A data storytelling recreation of Napoleon’s 1812 Russian Campaign — exploring survival, distance, and the deadly cold.
+    </p>
+   </div></center>
+  <nav class="navbar">
+    <a href="#overview">Overview</a>
+    <a href="#flowmap">Flow Map</a>
+    <a href="#temperature">Temperature</a>
+    <a href="#survivors">Survivors</a>
+    <a href="#ribbon">3D Visualization</a>
+    <a href="#animated">Animated March</a>
+    <a href="#dashboard">Dashboard</a>
+  </nav>
+
+  <main>
+   
+    <section id="overview" class="section">
+      <h2>Historical Overview</h2>
+      <p>
+        In the summer of 1812, Napoleon Bonaparte led the Grand Army — over 422,000 soldiers — eastward into Russia. 
+        The campaign began with confidence, but it ended as one of history’s most devastating military disasters. 
+        Only a small fraction of the soldiers who crossed the Neman River ever made it home.
+      </p>
+      <p>
+        In 1869, French civil engineer <strong>Charles Joseph Minard</strong> visualized this story not with words, 
+        but with data. His flow map combined geography, troop size, and temperature — 
+        a groundbreaking example of how visualization can convey human tragedy.
+      </p>
+      <p>
+        This recreation revisits Minard’s design through modern tools, integrating interactivity, animation, 
+        and 3D visualization to provide both analytical depth and emotional storytelling.
+      </p>
+    </section>
+
+ 
+    <section id="flowmap" class="section">
+      <h2>The Grand Army’s Journey</h2>
+      <p>
+        The <strong>Flow Map</strong> below represents the movement of Napoleon’s troops from the Neman River 
+        to Moscow and back. The tan bands show the army’s advance; the dark bands illustrate the retreat. 
+        Each line’s width is proportional to the number of surviving soldiers.
+      </p>
+      <p>
+        This map captures the essence of Minard’s genius: a single chart combining 
+        <em>geography</em>, <em>time</em>, <em>temperature</em>, and <em>human loss</em>. 
+        With each kilometer forward, men perished not only from battle but from exhaustion, hunger, and the Russian winter.
+      </p>
+      <iframe src="minard_static_flow_with_temperature.html" title="Flow Map" loading="lazy"></iframe>
+    </section>
+
+    <section id="temperature" class="section">
+      <h2>The Deadly Cold</h2>
+      <p>
+        As the army retreated, temperatures plummeted below freezing. 
+        The chart below shows the recorded temperatures along the retreat route. 
+        The deeper the army went into Russia, the colder it became — reaching <strong>-30°C</strong> at its worst.
+      </p>
+      <p>
+        By visually aligning geography and temperature, this graph demonstrates how 
+        environmental factors were as deadly as enemy combat. 
+        The soldiers were not only fighting the Russians — they were fighting nature itself.
+      </p>
+      <iframe src="minard_temperature_plot.html" title="Temperature Plot" loading="lazy"></iframe>
+    </section>
+
+
+    <section id="survivors" class="section">
+      <h2>Survivors Over Time</h2>
+      <p>
+        The <strong>Survivor Trend</strong> visualization quantifies the devastating attrition 
+        across the journey. From 422,000 men departing the Neman River, fewer than 10,000 reached the border again. 
+        The exponential decline is not just a statistic — it’s a representation of human endurance and collapse.
+      </p>
+      <p>
+        Every narrowing band and shrinking number stands as a reminder of how information design 
+        can humanize data — showing not only “how much” was lost, but “when” and “why”.
+      </p>
+      <iframe src="minard_survivor_trend.html" title="Survivor Trend" loading="lazy"></iframe>
+    </section>
+
+   
+    <section id="ribbon" class="section">
+      <h2>3D Mortality Ribbon</h2>
+      <p>
+        This <strong>3D Ribbon Visualization</strong> expands Minard’s flat design into space, 
+        showing troop decline as an elevation that falls with distance and temperature. 
+        The visualization provides an abstract but emotional landscape — the terrain of survival itself.
+      </p>
+      <p>
+        Through height, depth, and color, we perceive loss as a gradual descent into emptiness, 
+        echoing the soldiers’ march through the frozen Russian expanse.
+      </p>
+      <iframe src="minard_3d_ribbon.html" title="3D Ribbon Visualization" loading="lazy"></iframe>
+    </section>
+
+    
+    <section id="animated" class="section">
+      <h2>Animated March</h2>
+      <p>
+        Animation allows us to <strong>feel time</strong>. 
+        As you watch the army advance and retreat in this animated sequence, 
+        you can sense the steady collapse of strength and morale.
+      </p>
+      <p>
+        Each frame reflects the shrinking hope of the Grand Army — what began as a march of conquest 
+        ends as a slow retreat of survival.
+      </p>
+      <iframe src="minard_animated_march.html" title="Animated March" loading="lazy"></iframe>
+    </section>
+
+   
+    <section id="dashboard" class="section">
+      <h2>Interactive Data Dashboard</h2>
+      <p>
+        This dashboard brings together the geographical, thermal, and survival data into a single interactive hub.
+        Users can explore relationships across variables — seeing firsthand how geography and temperature 
+        intertwined with mortality.
+      </p>
+      <iframe src="minard_dashboard.html" title="Dashboard" loading="lazy"></iframe>
+    </section>
+
+  
+    <footer>
+      <p>
+        Created as part of <strong>Visualization and Storytelling</strong> course under the guidance of 
+        <em>Dr. Gabby Resch</em>.
+      </p>
+      <p>Designed and developed by <strong>Jasmeet Singh</strong> | © 2025</p>
+    </footer>
+  </main>
+</body>
+</html>
